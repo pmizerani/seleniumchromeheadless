@@ -21,4 +21,6 @@ mv -f chromedriver /usr/local/share/chromedriver &&\
 ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver &&\
 ln -s /usr/local/share/chromedriver /usr/bin/chromedriver
 
+# Fix for the issue with Selenium, as described here:
+# https://github.com/SeleniumHQ/docker-selenium/issues/87
 ENV DBUS_SESSION_BUS_ADDRESS=/dev/null SCREEN_RES=1280x1024x24
